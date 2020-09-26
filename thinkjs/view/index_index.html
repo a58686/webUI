@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>New ThinkJS Application</title>
+<style>
+*{padding: 0;margin: 0;font-size: 16px;line-height: 20px;font-family: arial;}
+</style>
+</head>
+<body>
+
+<canvas id="myCanvas" width="200" height="100"></canvas>
+
+<script>
+  var c=document.getElementById("myCanvas");
+
+  var cxt=c.getContext("2d");
+  cxt.fillStyle="red"
+  cxt.rect(0,0,100,100)
+  cxt.fill();
+  console.log(cxt);
+</script>
+</body>
+</html>
